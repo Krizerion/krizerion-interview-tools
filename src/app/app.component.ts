@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { CheckboxModule } from 'primeng/checkbox';
 import { InputTextModule } from 'primeng/inputtext';
-import { BrowserModule } from '@angular/platform-browser';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { DropdownModule } from 'primeng/dropdown';
 import { CommonModule } from '@angular/common';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'kit-root',
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./app.component.scss'],
   standalone: true,
   imports: [
+    RouterOutlet,
     InputTextModule,
     CheckboxModule,
     ButtonModule,
@@ -26,9 +28,21 @@ import { CommonModule } from '@angular/common';
   ],
 })
 export class AppComponent {
-  selectedState: any = null;
+  private readonly primengConfig = inject(PrimeNGConfig);
 
-  states: any[] = [
+  constructor() {
+    this.primengConfig.ripple = true;
+    this.primengConfig.zIndex = {
+      modal: 1100, // dialog, sidebar
+      overlay: 1000, // dropdown, overlaypanel
+      menu: 1000, // overlay menus
+      tooltip: 1100, // tooltip
+    };
+  }
+
+  selectedState = null;
+
+  states = [
     { name: 'Arizona', code: 'Arizona' },
     { name: 'California', value: 'California' },
     { name: 'Florida', code: 'Florida' },
@@ -36,11 +50,11 @@ export class AppComponent {
     { name: 'Washington', code: 'Washington' },
   ];
 
-  cities1: any[] = [];
+  cities1 = [];
 
-  cities2: any[] = [];
+  cities2 = [];
 
-  city1: any = null;
+  city1 = null;
 
-  city2: any = null;
+  city2 = null;
 }
