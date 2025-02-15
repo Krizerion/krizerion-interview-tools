@@ -7,4 +7,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   styleUrl: './summary.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SummaryComponent {}
+export class SummaryComponent {
+  test(): void {
+    console.log('t')
+  }
+}

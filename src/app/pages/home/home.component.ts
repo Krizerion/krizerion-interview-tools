@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   standalone: true,
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {}
+export class HomeComponent {
+  test(): void {
+    console.log('t')
+  }
+}

@@ -4,6 +4,7 @@ const tseslint = require('typescript-eslint');
 const angular = require('angular-eslint');
 const prettierConfig = require('eslint-config-prettier');
 
+
 module.exports = tseslint.config(
   {
     files: ['**/*.ts'],
@@ -13,6 +14,7 @@ module.exports = tseslint.config(
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
+      ...tseslint.configs.strict
     ],
     processor: angular.processInlineTemplates,
     rules: {
@@ -32,6 +34,13 @@ module.exports = tseslint.config(
           style: 'kebab-case',
         },
       ],
+      "sort-imports": ["error", {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": false
+    }]
     },
   },
   {
