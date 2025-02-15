@@ -3,21 +3,30 @@ const eslint = require('@eslint/js');
 const tseslint = require('typescript-eslint');
 const angular = require('angular-eslint');
 const prettierConfig = require('eslint-config-prettier');
-
+const eslintPluginUnicorn = require('eslint-plugin-unicorn');
+const globals = require('globals');
 
 module.exports = tseslint.config(
   {
     files: ['**/*.ts'],
+    languageOptions: {
+      globals: globals.builtin,
+    },
+    plugins: {
+      unicorn: eslintPluginUnicorn,
+    },
     extends: [
       eslint.configs.recommended,
       prettierConfig,
       ...tseslint.configs.recommended,
       ...tseslint.configs.stylistic,
       ...angular.configs.tsRecommended,
-      ...tseslint.configs.strict
+      ...tseslint.configs.strict,
     ],
     processor: angular.processInlineTemplates,
     rules: {
+      'unicorn/better-regex': 'error',
+      'unicorn/import-style': 'error',
       '@angular-eslint/directive-selector': [
         'error',
         {

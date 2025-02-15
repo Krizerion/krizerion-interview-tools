@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   test(): void {
-    console.log('t')
+    console.log('t');
   }
 }
