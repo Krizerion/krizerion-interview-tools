@@ -9,6 +9,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class SummaryComponent {
   test(): void {
-    const arr = ['a', 'b', 'c'];
+    // const array = ['a', 'b', 'c'];
   }
 }
