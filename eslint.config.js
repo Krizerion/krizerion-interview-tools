@@ -8,6 +8,9 @@ const globals = require('globals');
 
 module.exports = tseslint.config(
   {
+    ignores: ['node_modules', 'dist', 'documentation'],
+  },
+  {
     files: ['**/*.ts'],
     languageOptions: {
       globals: globals.builtin,
@@ -47,10 +50,7 @@ module.exports = tseslint.config(
   },
   {
     files: ['**/*.html'],
-    extends: [
-      ...angular.configs.templateRecommended,
-      ...angular.configs.templateAccessibility,
-    ],
+    extends: [...angular.configs.templateRecommended, ...angular.configs.templateAccessibility],
     rules: {},
   }
 );

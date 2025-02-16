@@ -1,10 +1,524 @@
 {
-  "users": [
-    { "id": 1, "name": "John Doe" },
-    { "id": 2, "name": "Jane Doe" }
-  ],
-  "posts": [
-    { "id": 1, "title": "Hello World", "author": "John Doe" },
-    { "id": 2, "title": "Goodbye World", "author": "Jane Doe" }
+  "questions": [
+    {
+      "id": "1",
+      "difficulty": "Junior",
+      "question": "What steps are you going to take if you have a colleague who doesn't perform well?",
+      "answer": "First will talk with him/her to know what is the reason => Pair programming, code reviews; share own helpers and tactics for better performance;  refer them to another colleague - more experienced, higher level; ",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "2",
+      "difficulty": "Junior",
+      "question": "How do you make proper estimations?",
+      "answer": "gather all available information, be realistic, learn from experience, take into account other people connected to the estimation; break down the task to smaller and clearer subtasks",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "3",
+      "difficulty": "Junior",
+      "question": "What information would you need when starting on a new project?",
+      "answer": "client expectations, responsibilities, teammates, kb (confluence, ...), download repo, web page designs, who is who in the project",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "4",
+      "difficulty": "Junior",
+      "question": "How do you approach an issue you know nothing about?",
+      "answer": "ask questions, research, find someone who has experience with similar issues",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "5",
+      "difficulty": "Junior",
+      "question": "English",
+      "answer": "yes",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "6",
+      "difficulty": "Junior",
+      "question": "How do you keep up to date information",
+      "answer": "subscribe to blogs, channels, attend events",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "7",
+      "difficulty": "Lead",
+      "question": "How did you prepare yourself for the role of Lead Software Engineer? Trainings? Courses? Mentoring? Readings? Your recommendations",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "8",
+      "difficulty": "Lead",
+      "question": "Motivation, how do you motivate your team, what approaches do you know? Is there any universal motivator for everybody?",
+      "answer": "There are several main motivators for people - awards (not only money), security, challenges, responsibility, self-development, etc., but no universal one. The best way to understand what motivates a person is talking to them. Make them feel heard and seen by promoting two-way communication, give them an outlet for feedback, involve them in the work and isnpire them to take more responsibilities. Don't let their work and input left unnoticed, reward them - money is rarely a big motivator, but opportunities, responsibilities, praise or small awards are good options. ",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "9",
+      "difficulty": "Lead",
+      "question": "One of your teammates wants to change primary skill for Java (different than yours). What would your steps be?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "10",
+      "difficulty": "Lead",
+      "question": "Imagine you received feedback from the Development Manager on the customer side that one of your key developer teammates is performing rather badly during several last sprints. What actions would you take?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "11",
+      "difficulty": "Lead",
+      "question": "How to build a team? What stages do you know? How to move from one stage to another?",
+      "answer": "Forming, Storming, Norming, and Performing Tuckman's Model, GRIP Model, Lencioni Model, DISC Model",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "12",
+      "difficulty": "Lead",
+      "question": "How to manage large teams? How to scale teams? Functional/non-functional requirements.",
+      "answer": "Split into smaller teams, each responsible for a module/feature. TODO: MOB Development",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "13",
+      "difficulty": "Lead",
+      "question": "Main differences Lead vs Senior",
+      "answer": "Senior/Key developer in a project is involved in design, build and deployment of new systems. Works with DM/PM to assess goals, interpret client requests. Senior dev also acts as a mentor to others in the team regarding development problems and methodologies. \nA lead is responsible for managing the \"\"daily specifics\"\" of ongoing development efforts. He has supervising responsibilities and approving authority delegated by the DM/PM. If the project is big, more than one team can be formed, each of them having its own Development Team Lead. The Team Lead is actively involved in all phases of software development, from analysis to design, implementation, testing and documentation. He works with the team to ensure effective translation of the client requirements into practical and supportable implementations that are performant and scalable. DTL has the following responsibilities: \n- Monitor and motivate team members\n- Conduct and lead status meetings with the team\n- Identify important project objectives\n- Communicate assignments and delegate tasks to team members, ensure that duties are performed on time\n- Maintain an impecable work ethic, set and encourage high team standards within the team\n- Analyse team member's performance, initiate corrective actions if needed, recommend job promotions or terminations when necessary. \n- Ensure that project reporting is accurate and timely\n- Plan and organize special team events",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "14",
+      "difficulty": "Lead",
+      "question": "Could you provide an example of the most major decision you made? How it was negotiated with the client?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "15",
+      "difficulty": "Lead",
+      "question": "How often you delegate some activities? How do you decide when to delegate? How do you control? Why delegation is a good/bad idea and why?",
+      "answer": "When - when you don't have capacity or want a team member to improve in a particular area or learn something new.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "16",
+      "difficulty": "Lead",
+      "question": "How can you describe the process on your current project? What activities are driven by you?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "17",
+      "difficulty": "Lead",
+      "question": "Imagine the situation when your team is failed few previous sprints (commited 30 sp but complited 20). What would you do to improve this situation?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "18",
+      "difficulty": "Lead",
+      "question": "What task delegation techniques did you use?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "19",
+      "difficulty": "Lead",
+      "question": "Which difficulties did you encounter in communication with your customer and how do you solve them?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "20",
+      "difficulty": "Lead",
+      "question": "Customer want to add one epic into release schedule, release date in 1 month (2 sprints ahead). During conversation, customer asking for overtimes, and cancel vacations (team members not happy, several of them have vacation plans). What actions you will take?",
+      "answer": "(Answer by Kris Petrov):\nThere are several approaches here. First, I would clarify the priority and how critical this item is. If the client really insists of us doing this epic, I would first speak with the rest of the team, asking them who would like to work overtime and cancel vacations (voluntary). There will be 2 outcomes out of this:\n1. Some team members would like to work overtime and we will have enough capacity to finish the epic.\n2. We will not have enough capacity to finish the epic in the reqested time.\nIn case of option 2, we can sit together with the client and discuss a scope reduction of other pending tasks in the next 2 sprints. Also another approach is to reduce the new epic's scope and create an MVP that can be built upon later.\nI would also advise the client that it's better to descope low priority items than to cancel vacations or work overtime, because it's a dangerous practice that risks the integrity of the team. Bottom line is that the client must know that we should prioritize long-term engagement than short-term result.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "21",
+      "difficulty": "Lead",
+      "question": "You are responsible for some big feature. You receive 2 meeting requests in one timeslot - from technical person on customer side and some business person. They want to discuss with you 2 different topics and cannot be combined in one meeting. You can't reschedule them because you and your customer have a lot of other scheduled activities. What would you do?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "22",
+      "difficulty": "Lead",
+      "question": "You play Development Team lead role. Could you please tell about your team composition and your main responsibilites?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "23",
+      "difficulty": "Regular",
+      "question": "What is SCRUM and what is its main benefit?",
+      "answer": "Scrum is a metodology within which people can address complex adaptive problems, while productively and creatively delivering products of the highest possible value. \n - quicker release of useable product to users and customers;\n - higher quality;\n - higher productivity;\n - lower costs;\n - greater ability to incorporate changes as they occur;\n - better employee morale;\n - better user satisfaction;\n - being able to complete complex projects that previously could not be done.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "24",
+      "difficulty": "Regular",
+      "question": "Can you explain what are the roles and the different meetings in SCRUM?",
+      "answer": "Product Owner - represents client interests; \nSCRUM Master - facilitates the process, makes sure everyone keeps to SCRUM and agile principles; \nDevelopers - a team of professionals that take on the tasks for the sprint and deliver value to the client; \nSprint - period of several weeks (1-4) during which the dev team works on the preselected tasks;\nSprint Planning - a meeting during which tasks are selected for the current sprint (according to priority and based on dev's capacity) and plans are made for their completion, SCRUM master facilitates, PO and dev team participate;\nDaily SCRUM - for dev team to synch work, assess progress, plan next steps;\nSprint Review - dev team demonstrates progress, showcases results, get feedback from stakeholders;\nSprint Retrospective - at the end of a sprint, dev team reflects on the process, discusses ways to improve.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "25",
+      "difficulty": "Regular",
+      "question": "Should a SCRUM master be involved and give estimations together with the team? What is the purpose of the SCRUM master?",
+      "answer": "SCRUM Master - does not give estimations with the team. The SCRUM master maintains the SCRUM culture in the team and ensures that its principles are adhered to. This person follows the values ​​and methods of SCRUM in everything, while being flexible and always ready to use new opportunities for the benefit of the team's workflow.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "26",
+      "difficulty": "Regular",
+      "question": "What are the reponsibilities of the Product Owner in SCRUM? Can the PO and the SCRUM master be the same person?",
+      "answer": "Responsibilities and roles of a certified SCRUM Product Owner include:\n- defining the vision;\n- prioritizing the product backlog;\n- taking an overview of development stages;\n- handling communications;\n- knowing what the client needs;\n- evaluating progress.\nNo. The SCRUM Master is one individual who focuses on supporting and protecting the team. Trying to help them achieve a sustainable pace, help them as they try to deliver high quality, and really be a servant to the team. \nOn the other hand, you’ve got the Product Owner. The Product Owner is focused on prioritizing, getting the backlog ready, and they’re asking for “more, more, more” when it comes to business value. So, those two can be in conflict, and that can be healthy. We figure out a negotiated balance. But when both of those voices reside in a single person, it’s really confusing to the team. You don’t have that check and balance and you’re going to end up with problems. ",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "27",
+      "difficulty": "Regular",
+      "question": "What do you expect to change if you become D(X) developer?",
+      "answer": "nothing much - I already take responsibilities and tasks for this level",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "28",
+      "difficulty": "Regular",
+      "question": "What should be the responsibilities of a D(X) developer?",
+      "answer": "write good quality code, test, work with client to ensure the best end result, follow security standarts, communicate and work together with team, manage time and tasks, keep up with new technologies, research good practices and implement them ",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "29",
+      "difficulty": "Regular",
+      "question": "Imagine your client or manager wants to add a task in the middle of the sprint, can it be done?",
+      "answer": "It can be added to the backlog according to priority and can be included in the next sprint. Still, if it's very important to the client and it's urgent we can make an exception, we will just need to remove another task from the current sprint to even things out.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "30",
+      "difficulty": "Regular",
+      "question": "You have a team member in the team that constantly asks for help and you can't properly do your tasks. What do you do?",
+      "answer": "Talk to them and explain the situation. Schedule one meeting in which they can ask several questions and you can have uninterrupted time to help them. Share your own ways of learning, solving problems (sites, platforms, correct way of searching for solutions online). Motivate them to first try solving the problem on their own and only then turn to others for help.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "31",
+      "difficulty": "Regular",
+      "question": "What is the life-cycle of a feature?",
+      "answer": "SDLC: plan -> design -> build -> test -> deploy / requirements analysis -> design -> implementation -> testing -> refactoring",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "32",
+      "difficulty": "Regular",
+      "question": "How do you make code-reviews? What are the pros and cons of over-the-shoulder and tool-assisted code reviews?",
+      "answer": "go through another programmer's code, find and fix mistakes, inconsistencies, improve code quality\nOver-the-shoulder - easiest, intuitive, informal approach, no way of tracking documentation;\nTool-assisted - simple, easy to use, efficient (people review and leave comments when they have time, \"\"not leaving your desk\"\"), statistics, good documentation of the process, slower result - wait for everyone, go through comments one by one",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "33",
+      "difficulty": "Regular",
+      "question": "What do you consider to be quality code?",
+      "answer": "clearly written, descriptive names, no repetitions, refactored and formatted, straightforward, bug-free, well-documented",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "34",
+      "difficulty": "Regular",
+      "question": "What do you do when you notice that your less-experienced teammate won't be able to meet an important deadline?",
+      "answer": "First talk to them to check if this is trully the case. If so, offer advice and tactics to help them -  ways to prioritize, research, etc. Offer help in the form of pair-programming. Refer them to a colleague with experience and knowledge in the matter.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "35",
+      "difficulty": "Regular",
+      "question": "How do you usually estimate your work? What are some estimation techniques that you know and which is better in each case?\nHow do you estimate an uncertain task? What is more risky - overestimation or underestimation?",
+      "answer": "Estimation techniques: \n- top-down - start with big parts of the project and work down to smaller parts, tasks with more details;\n- bottom-up - when we know only partial information, only for small parts of the project, estimation is aggregated to the whole project;\n- analogous - use a reference from a similar project;\n- parametric - use a small metric (lines of code) and estimate on that;\n- PERT (three-point estimation) - average of the optimistic, most likely and pesimistic estimation;\n- what-if analysis - assumptions of varrying factors as scope, time, cost, resources, etc., workshop with the stakeholders, senior team members, break down work on small tasks and estimate by effort and resources\nUncertain task - gather as much info as possible, overestimate\nUnderestimation is more risky.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "36",
+      "difficulty": "Regular",
+      "question": "How do you comunicate with the customer for story points? How do you explain story points as something more understanable?",
+      "answer": "Teams assign story points relative to work complexity, the amount of work, and risk or uncertainty; different for each team",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "37",
+      "difficulty": "Regular",
+      "question": "Do you remember your last retrospective? What did you learn? Is it worth to conduct this kind of meeting?",
+      "answer": "Worth it - improve collaboration in the team, identify issues early, safe space for sharing feedback, opinions, issues, allow continuous improvement",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "38",
+      "difficulty": "Regular",
+      "question": "Candidates interviewing/team fitting. Green and red flags, what do you pay attention to?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "39",
+      "difficulty": "Regular",
+      "question": "EPAM pillars/values",
+      "answer": "Values: 1. Value the individual; 2. Act as a team; 3. Strive for excellence; 3. Focus on the customer; 5. Act with integrity",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "40",
+      "difficulty": "Regular",
+      "question": "How to argument decisions to the Customer?",
+      "answer": "Don't use technical language and difficult terminology, focus on what is important to the customer and see things through their perspective - they want results so connect your decisions to positive effects for the customer.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "41",
+      "difficulty": "Regular",
+      "question": "Knowledge transfer - how to do it?",
+      "answer": "mentorship, guided experience (hands-on, show how it works), simulation (trainings), work shadowing, paired work (two employees learning together), community of practice (group of people share knowledge over a long period of time), eLearning and instructor-led trainings",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "42",
+      "difficulty": "Regular",
+      "question": "You have booked a vacation on Friday, for a concert in another town, but on Monday PO tells you that you need to perform a demo for the client. What do you do? Did you inform the whole team about your vacation? Would you change if you didn't book the vacation? ",
+      "answer": "Informed all colleagues - yes!\nTalk to the PO, explain situation, can the demo be moved for the next / another day (convenient for the client, of course)\nDelegate to another colleague?",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "43",
+      "difficulty": "Regular",
+      "question": "Do you have Definition of Ready and Definition of Done for your sprint items? Could you explain why it's needed? ",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "44",
+      "difficulty": "Senior",
+      "question": "Other methodologies than SCRUM",
+      "answer": "/SCRUM vs KANBAN/\nKanban:\n- continuous process, items are pulled directly from the Product Backlog, each item is packaged for release as soon as possible; \n- Agile Coach, Product Owner, Dev Team, Daily Standup;\n- WIP (work in progress) limit for each column - Build, Test, Done.\nLean, XP, Waterfall (not agile methodology)",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "45",
+      "difficulty": "Senior",
+      "question": "What are the skills that the good mentor must have?",
+      "answer": "Willingness to share skills, knowledge, and expertise. Demonstrates a positive attitude and acts as a positive role model. Shows enthusiasm in the field. Provides guidance and constructive feedback. Sets and meets ongoing personal and professional goals. Values the opinions and initiatives of others. Motivates others by setting a good example.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "46",
+      "difficulty": "Senior",
+      "question": "During an interview, you realize that the candidate's level is higher than yours. How do you handle this interview? What's the best practice for checking a candidate's level?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "47",
+      "difficulty": "Senior",
+      "question": "How do you delegate work? Delegation vs Assignation? Can you give an example for something that you cannot delegate?",
+      "answer": "Delegation moves obligation from one to another, Assignment sets obligation from the start, doesn`t affect capacities; Onboarding, crisis situations",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "48",
+      "difficulty": "Senior",
+      "question": "How to solve a conflict between two developers during code review? How to minimize the number of such issues? How to ensure the developers will have healthy collaboration going forward?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "49",
+      "difficulty": "Senior",
+      "question": "Please describe pros and cons of Waterfall model, what other methodologies do you know? SCRUM ceremonies and artifacts? What are the steps to set up SCRUM in a new project?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "50",
+      "difficulty": "Senior",
+      "question": "How do you onboard people? First hours, First days, first weeks? ",
+      "answer": "Introduce them to the team, define team roles, methodologies, codebase, technical details, examples from experience",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "51",
+      "difficulty": "Senior",
+      "question": "How to design API, is it FE responsibility?",
+      "answer": "Design API:\n- design a product or service that provides a clear value to developers and addresses a clear challenge or opportunity;\n- make it easy to understand - good documentation, clear technical details - allowed values, data type, format, authentication, user rights and quotas, etc.;\n- security - quick and straight-forward authentication, validations;\n- flexibility - identify and support the main use cases, but don't serve only specific cases;\n- don’t have an API that goes directly to your database;\n- choose datacenters that are geographically close to where you have most of your users;\n- Time to First Hello World - how long does it take a developer to reach a minimum viable product with your API.",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "52",
+      "difficulty": "Senior",
+      "question": "What does \"\"product quality\"\" mean to you?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "53",
+      "difficulty": "Senior",
+      "question": "What is a successful project?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "54",
+      "difficulty": "Senior",
+      "question": "Client communication / What cannot be communicated / How to convince a client for something? / Advice for a strong relationship when there is a big time difference?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "55",
+      "difficulty": "Senior",
+      "question": "Have you ever proposed some technical decision to the customer?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "56",
+      "difficulty": "Senior",
+      "question": "What would you do if your teammate can't complete task in time?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "57",
+      "difficulty": "Senior",
+      "question": "Any suggestions or improvements on the project made by you?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "58",
+      "difficulty": "Senior",
+      "question": "Now is an important stage of implementation a new big feature which the customer really want to get in time, where you have a key role. But, next monday is a first day of your vacation that you and you family planned a long time. What options do you have?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "59",
+      "difficulty": "Senior",
+      "question": "How would you describe a reliable teammember?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "60",
+      "difficulty": "Senior",
+      "question": "You have got some feature to implement and you have a strong scedule for it. But you realize that your knowlage for this domain is not so good. How will you manage this situation?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "61",
+      "difficulty": "Senior",
+      "question": "How do you behave if someone disagrees with your decision?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "62",
+      "difficulty": "Senior",
+      "question": "How waterfall is different from agile methodologies? When it can be applied?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "63",
+      "difficulty": "Senior",
+      "question": "Can you name any criteria's of well described user story?",
+      "answer": "",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "64",
+      "difficulty": "Senior",
+      "question": "What is Software development life cycle (SDLC)? Can you explain the SDLC of your current project?",
+      "answer": "SDLC is a process followed for a software project, within a software organization. It consists of a detailed plan describing how to develop, maintain, replace and alter or enhance specific software. A typical Software Development Life Cycle consists of the following stages − Stage 1: Planning and Requirement Analysis, Stage 2: Defining Requirements, Stage 3: Designing the Product Architecture,  Stage 4: Building or Developing the Product, Stage 5: Testing the Product, Stage 6: Deployment in the Market and Maintenance",
+      "links": [],
+      "category": "SoftSkills"
+    },
+    {
+      "id": "65",
+      "difficulty": "Senior",
+      "question": "Explain Definition of Ready (DoR) vs. Definition of Done (DoD).",
+      "answer": "A task (backlog item) is defined ready when is \"\"clear\"\" (if all Scrum team members have a shared understanding of what it means), \"\"testable\"\" (if there is an effective way to determine if the functionality works as expected), \"\"feastable\"\" (if it can be completed in one sprint). A task is defined done when \"\"code produced\"\" (all ‘to do’ items in code completed), \"\"Code commented, checked in and run against current version in source control\"\", \"\"Peer reviewed\"\", \"\"Builds without errors\"\", \"\"Unit tests written and passing\"\", \"\"Deployed to system test environment and passed system tests\"\" ",
+      "links": [],
+      "category": "SoftSkills"
+    }
   ]
 }

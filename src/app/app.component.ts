@@ -1,22 +1,15 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { ButtonModule } from 'primeng/button';
-import { FloatLabel } from 'primeng/floatlabel';
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { InputTextModule } from 'primeng/inputtext';
-import { Knob } from 'primeng/knob';
 import { MenubarModule } from 'primeng/menubar';
-import { Select } from 'primeng/select';
-import { DataService } from './services/data.service';
-
-interface City {
-  name: string;
-  code: string;
-}
+import { Question } from './shared/models/question.model';
+import { QuestionsService } from './shared/services/questions.service';
 
 @Component({
   selector: 'kit-root',
@@ -31,48 +24,21 @@ interface City {
     AutoCompleteModule,
     MenubarModule,
     ReactiveFormsModule,
-    FloatLabel,
-    Knob,
     InputGroupAddonModule,
     InputGroupModule,
-    Select,
     ReactiveFormsModule,
     InputTextModule,
+    RouterModule,
   ],
 })
 export class AppComponent implements OnInit {
-  text1: string | undefined;
+  private readonly questionsService = inject(QuestionsService);
 
-  text2: string | undefined;
-
-  number: string | undefined;
-
-  selectedCity: City | undefined;
-
-  cities: City[] = [
-    { name: 'New York', code: 'NY' },
-    { name: 'Rome', code: 'RM' },
-    { name: 'London', code: 'LDN' },
-    { name: 'Istanbul', code: 'IST' },
-    { name: 'Paris', code: 'PRS' },
-  ];
-  value3 = 42;
-
-  value2 = 'test123';
-
-  private readonly dataService = inject(DataService);
-
-  users = [];
-  posts = [];
+  questions: Question[] = [];
 
   ngOnInit() {
-    this.dataService.getUsers().subscribe(data => {
-      this.users = data;
-      console.log(data);
-    });
-
-    this.dataService.getPosts().subscribe(data => {
-      this.posts = data;
+    this.questionsService.getQuestions().subscribe(data => {
+      this.questions = data;
       console.log(data);
     });
   }
@@ -81,6 +47,17 @@ export class AppComponent implements OnInit {
     {
       label: 'Home',
       icon: 'pi pi-home',
+      href: '/home',
+    },
+    {
+      label: 'Test Page',
+      icon: 'pi pi-home',
+      href: '/summary',
     },
   ];
+
+  toggleDarkMode() {
+    const element = document.querySelector('html');
+    element?.classList.toggle('kit-dark-mode');
+  }
 }
