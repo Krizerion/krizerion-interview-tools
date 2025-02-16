@@ -1,4 +1,6 @@
-<!-- <div class="p-d-flex p-jc-center p-ai-center bg-p">
+
+ 
+ <div class="p-d-flex p-jc-center p-ai-center bg-p">
   <p-button label="Primary" />
   <p-button label="Secondary" severity="secondary" />
   <p-button label="Success" severity="success" />
@@ -13,19 +15,74 @@
 <i class="pi pi-times green"></i>
 <i class="pi pi-search primary-color"></i>
 <i class="pi pi-user slategray"></i>
-
+<!--
 <div class="card flex justify-center">
   <p-autocomplete [(ngModel)]="value" [dropdown]="true" [suggestions]="items" (completeMethod)="search($event)" />
 </div> -->
 
 <div class="site-wrapper surface-ground">
   <div class="main-panel">
-    <div>Header</div>
+    <div class="header bg-gray-500 text-white p-3 flex justify-content-between align-items-center block">
+      <p-menubar [model]="menuItems" class="w-full">
+        <ng-template #start>
+          <span>some content start logo maybe?</span>
+        </ng-template>
+        <ng-template #item let-item let-root="root">
+          <a pRipple class="flex items-center p-menubar-item-link">
+            <span><i class="mr-2" [ngClass]="item.icon"></i>{{ item.label }}</span>
+          </a>
+        </ng-template>
+        <ng-template #end>
+          <div class="flex items-center gap-2">
+            <p-floatlabel variant="in">
+              <input pInputText id="in_label" [(ngModel)]="value2" autocomplete="off" />
+              <label for="in_label">Search</label>
+          </p-floatlabel>
+          </div>
+        </ng-template>
+      </p-menubar>
+    </div>
 
-    <div class="content">
+    <div class="content p-5">
+      <p-knob [(ngModel)]="value3" />
+      <div class="card grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p-inputgroup>
+            <p-inputgroup-addon>
+                <i class="pi pi-user"></i>
+            </p-inputgroup-addon>
+            <input pInputText [(ngModel)]="text1" placeholder="Username" />
+        </p-inputgroup>
+      
+        <p-inputgroup>
+            <p-inputgroup-addon>$</p-inputgroup-addon>
+            <p-inputnumber [(ngModel)]="number" placeholder="Price" />
+            <p-inputgroup-addon>.00</p-inputgroup-addon>
+        </p-inputgroup>
+      
+        <p-inputgroup>
+            <p-inputgroup-addon>www</p-inputgroup-addon>
+            <input pInputText  [(ngModel)]="text2" placeholder="Website" />
+        </p-inputgroup>
+      
+        <p-inputgroup>
+            <p-inputgroup-addon>
+                <i class="pi pi-map"></i>
+            </p-inputgroup-addon>
+            <p-select [(ngModel)]="selectedCity" [options]="cities" optionLabel="name" placeholder="City" />
+        </p-inputgroup>
+      </div>
       <router-outlet></router-outlet>
     </div>
 
-    <div>Footer</div>
+    <div class="footer bg-gray-500 text-white p-3 flex justify-content-between align-items-center">
+      <div>
+        <span>© 2023 Krizerion Interview Tools</span>
+      </div>
+      <div>
+        <i class="pi pi-facebook p-mr-2"></i>
+        <i class="pi pi-twitter p-mr-2"></i>
+        <i class="pi pi-linkedin"></i>
+      </div>
+    </div>
   </div>
 </div>

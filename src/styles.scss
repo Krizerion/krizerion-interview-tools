@@ -2,5 +2,34 @@
 
 html {
   font-size: 16px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter var", "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
 }

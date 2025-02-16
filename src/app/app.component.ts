@@ -1,14 +1,21 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, OnInit } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { ButtonModule } from 'primeng/button';
+import { FloatLabel } from 'primeng/floatlabel';
+import { InputGroupModule } from 'primeng/inputgroup';
+import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
+import { InputTextModule } from 'primeng/inputtext';
+import { Knob } from 'primeng/knob';
+import { MenubarModule } from 'primeng/menubar';
+import { Select } from 'primeng/select';
 import { DataService } from './services/data.service';
 
-interface AutoCompleteCompleteEvent {
-  originalEvent: Event;
-  query: string;
+interface City {
+  name: string;
+  code: string;
 }
 
 @Component({
@@ -16,31 +23,47 @@ interface AutoCompleteCompleteEvent {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   standalone: true,
-  imports: [RouterOutlet, FormsModule, CommonModule, ButtonModule, AutoCompleteModule],
+  imports: [
+    RouterOutlet,
+    FormsModule,
+    CommonModule,
+    ButtonModule,
+    AutoCompleteModule,
+    MenubarModule,
+    ReactiveFormsModule,
+    FloatLabel,
+    Knob,
+    InputGroupAddonModule,
+    InputGroupModule,
+    Select,
+    ReactiveFormsModule,
+    InputTextModule,
+  ],
 })
 export class AppComponent implements OnInit {
-  selectedState = null;
+  text1: string | undefined;
 
-  states = [
-    { name: 'Arizona', code: 'Arizona' },
-    { name: 'California', value: 'California' },
-    { name: 'Florida', code: 'Florida' },
-    { name: 'Ohio', code: 'Ohio' },
-    { name: 'Washington', code: 'Washington' },
+  text2: string | undefined;
+
+  number: string | undefined;
+
+  selectedCity: City | undefined;
+
+  cities: City[] = [
+    { name: 'New York', code: 'NY' },
+    { name: 'Rome', code: 'RM' },
+    { name: 'London', code: 'LDN' },
+    { name: 'Istanbul', code: 'IST' },
+    { name: 'Paris', code: 'PRS' },
   ];
+  value3 = 42;
 
-  cities1 = [];
-
-  cities2 = [];
-
-  city1 = null;
-
-  city2 = null;
+  value2 = 'test123';
 
   private readonly dataService = inject(DataService);
 
-  users: any[] = [];
-  posts: any[] = [];
+  users = [];
+  posts = [];
 
   ngOnInit() {
     this.dataService.getUsers().subscribe(data => {
@@ -54,13 +77,10 @@ export class AppComponent implements OnInit {
     });
   }
 
-  items: any[] = [];
-
-  value: any;
-
-  search(event: AutoCompleteCompleteEvent) {
-    const _items = [...Array(10).keys()];
-
-    this.items = event.query ? [...Array(10).keys()].map(item => event.query + '-' + item) : _items;
-  }
+  menuItems = [
+    {
+      label: 'Home',
+      icon: 'pi pi-home',
+    },
+  ];
 }

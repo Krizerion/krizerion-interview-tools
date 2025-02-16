@@ -563,6 +563,12 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
+  '@babel/plugin-transform-async-generator-functions@7.26.8':
+    resolution: {integrity: sha512-He9Ej2X7tNf2zdKMAGOsmg2MrFc+hfoAhd3po4cWfo/NWjzEAKa0oQruj1ROVUdl0e6fb6/kE/G3SSxE0lRJOg==}
+    engines: {node: '>=6.9.0'}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+
   '@babel/plugin-transform-async-to-generator@7.25.9':
     resolution: {integrity: sha512-NT7Ejn7Z/LjUH0Gv5KsBCxh7BH3fbLTV0ptHvpeMvrt3cPThHfJfst9Wrb7S8EvJ7vRTFI7z+VAvFVEQn/m5zQ==}
     engines: {node: '>=6.9.0'}
@@ -882,6 +888,10 @@ packages:
 
   '@babel/runtime@7.26.0':
     resolution: {integrity: sha512-FDSOghenHTiToteC/QRlv2q3DhPZ/oOXTBoirfWNx1Cx3TMVcGWQtMMmQcSvb/JjpNeGzx8Pq/b4fKEJuWm1sw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.26.9':
+    resolution: {integrity: sha512-aA63XwOkcl4xxQa3HjPMqOP6LiK0ZDv3mUPYEFXkpHbaFjtGggE1A61FjFzJnB+p7/oy2gA8E+rcBNl/zC1tMg==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.26.9':
@@ -6575,20 +6585,20 @@ snapshots:
       '@babel/core': 7.26.0
       '@babel/helper-plugin-utils': 7.26.5
 
-  '@babel/plugin-transform-async-generator-functions@7.25.9(@babel/core@7.25.8)':
-    dependencies:
-      '@babel/core': 7.25.8
-      '@babel/helper-plugin-utils': 7.26.5
-      '@babel/helper-remap-async-to-generator': 7.25.9(@babel/core@7.25.8)
-      '@babel/traverse': 7.26.9
-    transitivePeerDependencies:
-      - supports-color
-
   '@babel/plugin-transform-async-generator-functions@7.25.9(@babel/core@7.26.0)':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/helper-plugin-utils': 7.26.5
       '@babel/helper-remap-async-to-generator': 7.25.9(@babel/core@7.26.0)
+      '@babel/traverse': 7.26.9
+    transitivePeerDependencies:
+      - supports-color
+
+  '@babel/plugin-transform-async-generator-functions@7.26.8(@babel/core@7.25.8)':
+    dependencies:
+      '@babel/core': 7.25.8
+      '@babel/helper-plugin-utils': 7.26.5
+      '@babel/helper-remap-async-to-generator': 7.25.9(@babel/core@7.25.8)
       '@babel/traverse': 7.26.9
     transitivePeerDependencies:
       - supports-color
@@ -7031,14 +7041,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-transform-private-methods@7.25.9(@babel/core@7.25.8)':
-    dependencies:
-      '@babel/core': 7.25.8
-      '@babel/helper-create-class-features-plugin': 7.26.9(@babel/core@7.25.8)
-      '@babel/helper-plugin-utils': 7.26.5
-    transitivePeerDependencies:
-      - supports-color
-
   '@babel/plugin-transform-private-methods@7.25.9(@babel/core@7.26.0)':
     dependencies:
       '@babel/core': 7.26.0
@@ -7234,7 +7236,7 @@ snapshots:
       '@babel/plugin-syntax-import-attributes': 7.26.0(@babel/core@7.25.8)
       '@babel/plugin-syntax-unicode-sets-regex': 7.18.6(@babel/core@7.25.8)
       '@babel/plugin-transform-arrow-functions': 7.25.9(@babel/core@7.25.8)
-      '@babel/plugin-transform-async-generator-functions': 7.25.9(@babel/core@7.25.8)
+      '@babel/plugin-transform-async-generator-functions': 7.26.8(@babel/core@7.25.8)
       '@babel/plugin-transform-async-to-generator': 7.25.9(@babel/core@7.25.8)
       '@babel/plugin-transform-block-scoped-functions': 7.26.5(@babel/core@7.25.8)
       '@babel/plugin-transform-block-scoping': 7.25.9(@babel/core@7.25.8)
@@ -7268,7 +7270,7 @@ snapshots:
       '@babel/plugin-transform-optional-catch-binding': 7.25.9(@babel/core@7.25.8)
       '@babel/plugin-transform-optional-chaining': 7.25.9(@babel/core@7.25.8)
       '@babel/plugin-transform-parameters': 7.25.9(@babel/core@7.25.8)
-      '@babel/plugin-transform-private-methods': 7.25.9(@babel/core@7.25.8)
+      '@babel/plugin-transform-private-methods': 7.25.7(@babel/core@7.25.8)
       '@babel/plugin-transform-private-property-in-object': 7.25.9(@babel/core@7.25.8)
       '@babel/plugin-transform-property-literals': 7.25.9(@babel/core@7.25.8)
       '@babel/plugin-transform-regenerator': 7.25.9(@babel/core@7.25.8)
@@ -7381,6 +7383,10 @@ snapshots:
       esutils: 2.0.3
 
   '@babel/runtime@7.26.0':
+    dependencies:
+      regenerator-runtime: 0.14.1
+
+  '@babel/runtime@7.26.9':
     dependencies:
       regenerator-runtime: 0.14.1
 
@@ -10302,7 +10308,7 @@ snapshots:
 
   i18next@23.16.8:
     dependencies:
-      '@babel/runtime': 7.26.0
+      '@babel/runtime': 7.26.9
 
   iconv-lite@0.4.24:
     dependencies:
