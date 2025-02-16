@@ -8,7 +8,19 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SummaryComponent {
-  test(): void {
-    // const array = ['a', 'b', 'c'];
+  /**
+   * Some Kris test method
+   *
+   * @param {string} parameterA
+   * @memberof SummaryComponent
+   */
+  test(parameterA: string): void {
+    const array = ['a', 'b', 'c'];
+    console.log(array, parameterA);
+
+    for (let index = 0; index < 434; index++) {
+      const element = array[index];
+      console.log(element);
+    }
   }
 }
